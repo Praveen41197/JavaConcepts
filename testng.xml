@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Book Store Test Suite">
+  <test name="Login Test">
+    <classes>
+      <class name="loginLogoutTest.LoginLogoutTest">
+        <methods>
+          <include name="VerifyLogin"></include>
+          <include name="VerifyLogout"></include>
+        </methods>
+      </class> </classes>
+  </test> 
+  
+  </suite> 
+
+
+
