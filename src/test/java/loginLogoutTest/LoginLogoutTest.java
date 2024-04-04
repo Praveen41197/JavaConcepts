@@ -25,5 +25,6 @@ public class LoginLogoutTest extends BaseClass {
     	Assert.assertEquals(actualValue, "Login in Book Store");
     	
     }
-
 }
+
+//added new command
