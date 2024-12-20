@@ -59,7 +59,7 @@ public class LoginPage extends BaseClass {
 	public WebElement LogoutVerifyValue;
 	
 	public void gotoLoginPage() throws InterruptedException {
-		
+		//Navigate to Login Page
 		wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.visibilityOf(loginPagebtn));
 		loginPagebtn.click();
@@ -68,6 +68,7 @@ public class LoginPage extends BaseClass {
 	
 	
 	public String LoginintoAccount(String username, String password) throws InterruptedException {
+		//Filling credentials and Perform Login
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(Username));
 		wait.until(ExpectedConditions.visibilityOf(Password));
@@ -88,6 +89,7 @@ public class LoginPage extends BaseClass {
 	
 	
 	public String logout() throws InterruptedException {
+		//Perform Logout functionality
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(LogoutBtn));
 		wait.until(ExpectedConditions.elementToBeClickable(LogoutBtn));
