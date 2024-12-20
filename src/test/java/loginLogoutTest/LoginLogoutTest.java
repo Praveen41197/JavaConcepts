@@ -20,7 +20,7 @@ public class LoginLogoutTest extends BaseClass {
         Assert.assertEquals(actualusernamevalue, AppConstants.Admin_username);
     }
     @Test(dependsOnMethods = "VerifyLogin")
-    public void VerifyLogout() throws InterruptedException {
+    public void VerifyLogout() throws InterruptedException { //Logout perform only if loggedin
     	String actualValue = loginPage.logout();
     	Assert.assertEquals(actualValue, "Login in Book Store");
     	
